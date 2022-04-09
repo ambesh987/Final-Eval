@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import Button from "./Button";
-import { useNavigate } from "react-router";
+
 
 
 const Register = () => {
@@ -37,17 +36,7 @@ const Register = () => {
           navigator("/login");
       });
   }
-  // if (registerStatus != false) {
-  //   return (
-  //     <>
-  //       <h2>{registerStatus}</h2>
-  //       <Button secondary onClick={() => setRegisterStatus(false)}> */}
-  //         {" "}
-  //         Register Again
-  //       </Button>
-  //     </>
-  //   );
-  // }
+
   return (
     <div>
       <h3>Register</h3>
@@ -55,7 +44,7 @@ const Register = () => {
         name="name"
         type="text"
         value={data.name}
-        placeholder="Name"
+        placeholder="Enter Name"
         onChange={handleChange}
       />
       <br />
@@ -64,16 +53,16 @@ const Register = () => {
         name="email"
         type="email"
         value={data.email}
-        placeholder="Email"
+        placeholder="Enter Email"
         onChange={handleChange}
       />
       <br />
       <br />
       <input
         name="mobile"
-        type="number"
+        type="text"
         value={data.mobile}
-        placeholder="Mobile"
+        placeholder="Enter Phone no."
         onChange={handleChange}
       />
       <br />
@@ -82,7 +71,7 @@ const Register = () => {
         name="username"
         type="text"
         value={data.username}
-        placeholder="UserName"
+        placeholder="Enter UserName"
         onChange={handleChange}
       />
       <br />
@@ -91,17 +80,12 @@ const Register = () => {
         name="password"
         type="password"
         value={data.password}
-        placeholder="Password"
+        placeholder="Enter Password"
         onChange={handleChange}
       />
       <br />
       <br />
-      <textarea
-        name="description"
-        value={data.description}
-        placeholder="Description"
-        onChange={handleChange}
-      />
+     
       <button onClick={GetResponse}>Register</button>
     </div>
   );

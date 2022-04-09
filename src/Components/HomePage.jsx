@@ -3,7 +3,10 @@ import './HomePage.css';
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <br />
+      Welcome to the Employee dashboard, to begin with Register First!
+    </div>
   )
 }
 

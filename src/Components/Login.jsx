@@ -58,7 +58,7 @@ const Login = () => {
         name="username"
         type="text"
         value={data.username}
-        placeholder="UserName"
+        placeholder="Enter Username"
         onChange={handleChange}
       />
 
@@ -69,13 +69,13 @@ const Login = () => {
         name="password"
         type="password"
         value={data.password}
-        placeholder="Password"
+        placeholder="Enter Password"
         onChange={handleChange}
       />
       <br />
       <br />
       <button secondary onClick={GetResponse}>
-        Sign In
+        Login In
       </button>
     </LoginWrapper>
   );
